@@ -1,0 +1,7 @@
+composer.lock
+/vendor/
+/.idea/
+/build/
+/examples/
+/.history
+/.phpunit.cache
