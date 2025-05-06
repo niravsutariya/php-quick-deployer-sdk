@@ -1,10 +1,13 @@
 {
-    "name": "niravsutariya/php-quick-deployer-sdk",
+    "name": "niravsutariya/quick-deployer-sdk",
     "description": "A simple to use PHP class to work with the Quick Deployer API",
     "keywords": [
       "laravel",
       "quick-deployer",
-      "sdk"
+      "sdk",
+      "api",
+      "php",
+      "quickdeployer"
     ],
     "type": "library",
     "license": "MIT",
@@ -16,6 +19,11 @@
             "homepage": "https://www.niravsutariya.com/"
         }
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/niravsutariya/php-quick-deployer-sdk.git"
+    },
+    "homepage": "https://github.com/niravsutariya/php-quick-deployer-sdk#readme",
     "minimum-stability": "stable",
     "require": {
         "php": "^7.4|^8.0",
