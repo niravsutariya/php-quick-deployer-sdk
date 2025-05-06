@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NiravSutariya\\QuickDeployer\\": "src/"
+            "QuickDeployer\\SDK\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NiravSutariya\\QuickDeployer\\Tests\\": "tests/"
+            "QuickDeployer\\Tests\\": "tests/"
         }
     },
     "config": {

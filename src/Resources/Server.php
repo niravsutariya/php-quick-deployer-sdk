@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NiravSutariya\QuickDeployer\Resources;
+namespace QuickDeployer\Resources;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;

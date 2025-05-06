@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace NiravSutariya\QuickDeployer;
+namespace QuickDeployer\SDK;
 
-use GuzzleHttp\Client;
-use NiravSutariya\QuickDeployer\Resources\Project;
-use NiravSutariya\QuickDeployer\Resources\Server;
+use GuzzleHttp\Client as GuzzleClient;
+use QuickDeployer\Resources\Project;
+use QuickDeployer\Resources\Server;
 
-class QuickDeployer
+class Client
 {
-    private Client $client;
+    private GuzzleClient $client;
     private string $apiKey;
 
     public function __construct(string $apiKey, string $baseUri = 'https://staging.quickdeployer.com/api')
     {
         $this->apiKey = $apiKey;
-        $this->client = new Client([
+        $this->client = new GuzzleClient([
             'base_uri' => $baseUri,
             'headers' => [
                 'Authorization' => 'Bearer ' . $apiKey,
@@ -26,9 +26,10 @@ class QuickDeployer
         ]);
     }
 
-    public function projects(): Project
+    public function getProjects(): array
     {
-        return new Project($this->client);
+        $projectResource = new Project($this->client);
+        return $projectResource->list();
     }
 
     public function servers(string $projectId): Server

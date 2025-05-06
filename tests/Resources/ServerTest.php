@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace NiravSutariya\QuickDeployer\Tests\Resources;
+namespace QuickDeployer\Tests\Resources;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use NiravSutariya\QuickDeployer\Resources\Server;
+use QuickDeployer\Resources\Server;
 use PHPUnit\Framework\TestCase;
 
 class ServerTest extends TestCase

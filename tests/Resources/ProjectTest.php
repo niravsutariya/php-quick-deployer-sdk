@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace NiravSutariya\QuickDeployer\Tests\Resources;
+namespace QuickDeployer\Tests\Resources;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use NiravSutariya\QuickDeployer\Resources\Project;
+use QuickDeployer\Resources\Project;
 use PHPUnit\Framework\TestCase;
 
 class ProjectTest extends TestCase
@@ -37,6 +37,7 @@ class ProjectTest extends TestCase
         $this->assertIsArray($result);
         $this->assertArrayHasKey('projects', $result);
         $this->assertEquals('project-123', $result['projects'][0]['id']);
+        $this->assertEquals('Test Project', $result['projects'][0]['name']);
     }
 
     public function testCanGetProject(): void
