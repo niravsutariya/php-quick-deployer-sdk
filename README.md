@@ -20,7 +20,7 @@ The QuickDeployer SDK is a PHP library for interacting with the QuickDeployer AP
 Install the SDK via Composer:
 
 ```bash
-composer require niravsutariya/php-quick-deployer-sdk
+composer require niravsutariya/quick-deployer-sdk
 ```
 
 If the SDK is not yet published, you can include it as a local or VCS repository in your `composer.json`:
@@ -34,7 +34,7 @@ If the SDK is not yet published, you can include it as a local or VCS repository
         }
     ],
     "require": {
-        "niravsutariya/php-quick-deployer-sdk": "dev-main"
+        "niravsutariya/quick-deployer-sdk": "dev-main"
     }
 }
 ```
@@ -61,7 +61,7 @@ $client = new Client($apiKey);
 Optionally, specify a custom base URI (defaults to `https://staging.quickdeployer.com/api`):
 
 ```php
-$client = new Client($apiKey, 'https://api.quickdeployer.com/api');
+$client = new Client($apiKey, 'https://quickdeployer.com/api');
 ```
 
 ### Managing Projects
